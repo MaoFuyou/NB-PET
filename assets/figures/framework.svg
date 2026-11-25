@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" role="img" aria-labelledby="title desc">
+  <title id="title">NB-PET research workflow</title>
+  <desc id="desc">Routine reports are converted to labels and coarse anatomical regions. Recognition uses PET and CT only; localization additionally uses the current report's structured information.</desc>
+  <defs>
+    <marker id="ink-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 7 3.5 0 7z" fill="#607489"/></marker>
+    <marker id="soft-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 7 3.5 0 7z" fill="#7966a8"/></marker>
+  </defs>
+  <rect width="1200" height="540" rx="26" fill="#f8fafc"/>
+  <rect x="28" y="26" width="1144" height="488" rx="20" fill="#ffffff" stroke="#dce5ed"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#152d44">
+    <text x="56" y="63" font-size="13" font-weight="700" letter-spacing="2.4" fill="#176d6c">NB-PET  /  RESEARCH WORKFLOW</text>
+    <text x="56" y="99" font-size="29" font-weight="700">One report-supervised framework, two inference tasks</text>
+
+    <!-- Shared report branch -->
+    <rect x="55" y="129" width="348" height="337" rx="16" fill="#f5f1fb" stroke="#ded6ef"/>
+    <text x="77" y="161" font-size="12" font-weight="700" letter-spacing="1.65" fill="#685492">REPORT STRUCTURING</text>
+    <rect x="77" y="181" width="304" height="80" rx="11" fill="#ffffff" stroke="#e4daef"/>
+    <path d="M94 200h17l7 7v32H94z M111 200v7h7 M100 219h12 M100 226h12" fill="none" stroke="#7966a8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="131" y="215" font-size="18" font-weight="700">Routine PET/CT report</text>
+    <text x="131" y="238" font-size="13" fill="#51657a">Narrative findings and impression</text>
+    <path d="M228 265v20" stroke="#7966a8" stroke-width="1.6" marker-end="url(#soft-arrow)"/>
+    <text x="77" y="312" font-size="14" font-weight="700" fill="#5a4785">Structured supervision</text>
+    <rect x="77" y="327" width="304" height="41" rx="8" fill="#ffffff" stroke="#e4daef"/>
+    <circle cx="95" cy="348" r="4.5" fill="#8d75b5"/>
+    <text x="108" y="353" font-size="15" font-weight="700">Report-derived clinical labels</text>
+    <rect x="77" y="379" width="304" height="41" rx="8" fill="#ffffff" stroke="#e4daef"/>
+    <circle cx="95" cy="400" r="4.5" fill="#68a79c"/>
+    <text x="108" y="405" font-size="15" font-weight="700">Coarse anatomical regions</text>
+    <text x="77" y="445" font-size="13" fill="#51657a">Weak spatial references, not lesion masks</text>
+
+    <!-- Inference lanes -->
+    <rect x="434" y="129" width="710" height="153" rx="16" fill="#f0f6fc" stroke="#d9e9f5"/>
+    <rect x="453" y="147" width="23" height="23" rx="7" fill="#d6e8f7"/>
+    <text x="464.5" y="163" font-size="12" font-weight="700" text-anchor="middle" fill="#205780">A</text>
+    <text x="487" y="165" font-size="19" font-weight="700">Image-only recognition</text>
+    <text x="1124" y="164" font-size="12" text-anchor="end" fill="#426684">No current report at inference</text>
+    <rect x="453" y="185" width="290" height="73" rx="10" fill="#ffffff" stroke="#dae8f4"/>
+    <path d="M469 213h15v15h-15z M473 209h15v15" fill="none" stroke="#467aa4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="504" y="217" font-size="16" font-weight="700">PET and CT volumes</text>
+    <text x="504" y="240" font-size="13" fill="#51657a">Paired whole-body images</text>
+    <path d="M751 222h25" stroke="#607489" stroke-width="1.7" marker-end="url(#ink-arrow)"/>
+    <rect x="790" y="185" width="334" height="73" rx="10" fill="#ffffff" stroke="#dae8f4"/>
+    <text x="807" y="217" font-size="16" font-weight="700">Multi-label scores</text>
+    <text x="807" y="240" font-size="13" fill="#51657a">Examination-level clinical findings</text>
+
+    <rect x="434" y="310" width="710" height="156" rx="16" fill="#edf8f5" stroke="#cfe7df"/>
+    <rect x="453" y="328" width="23" height="23" rx="7" fill="#cdece4"/>
+    <text x="464.5" y="344" font-size="12" font-weight="700" text-anchor="middle" fill="#176d6c">B</text>
+    <text x="487" y="346" font-size="19" font-weight="700">Report-guided 3D localization</text>
+    <text x="1124" y="345" font-size="12" text-anchor="end" fill="#236f68">Report information at inference</text>
+    <rect x="453" y="369" width="290" height="73" rx="10" fill="#ffffff" stroke="#d7ece5"/>
+    <path d="M469 398h15v15h-15z M473 394h15v15" fill="none" stroke="#4d998c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="504" y="401" font-size="16" font-weight="700">PET/CT + report conditions</text>
+    <text x="504" y="424" font-size="13" fill="#51657a">Current labels and coarse regions</text>
+    <path d="M751 406h25" stroke="#607489" stroke-width="1.7" marker-end="url(#ink-arrow)"/>
+    <rect x="790" y="369" width="334" height="73" rx="10" fill="#ffffff" stroke="#d7ece5"/>
+    <text x="807" y="401" font-size="16" font-weight="700">3D heatmaps and ranked candidates</text>
+    <text x="807" y="424" font-size="13" fill="#51657a">Overall and label-specific responses</text>
+
+    <path d="M407 210h21" stroke="#7966a8" stroke-width="1.5" stroke-dasharray="3 3" marker-end="url(#soft-arrow)"/>
+    <path d="M407 385h21" stroke="#7966a8" stroke-width="1.5" stroke-dasharray="3 3" marker-end="url(#soft-arrow)"/>
+    <path d="M56 489h18" stroke="#7966a8" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <text x="82" y="494" font-size="12" fill="#51657a">Report labels supervise A during training; structured report information conditions B.</text>
+  </g>
+</svg>

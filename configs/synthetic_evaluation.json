@@ -1,0 +1,6 @@
+{
+  "grid_size": 1000,
+  "top_fraction": 0.02,
+  "positive_response_indices": [0, 1, 2, 3, 4],
+  "reference_interval": [900, 950]
+}
