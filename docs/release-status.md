@@ -1,8 +1,9 @@
 # Release status
 
-| Component | Included in this draft? | Release boundary |
+| Component | Included in this repository? | Release boundary |
 |---|---|---|
-| Project overview, workflow graphic, and documentation | Yes | Review against the approved manuscript before publishing. |
+| Project overview and documentation | Yes | Overview of the research method. |
+| Manuscript Figures 1 and 4 and Table 3 | Yes | [Selected manuscript results](paper-results.md); no downloadable case series or case-level data. |
 | Synthetic scoring example and tests | Yes | No patient data or trained model; documentation and scoring demonstration only. |
 | Full preprocessing, training, and model inference | No | Needs an allowlisted export, documented dependencies, and a clean-machine smoke test. |
 | Model checkpoints | No | Review model ownership, dependencies, redistribution terms, and permitted uses. |
